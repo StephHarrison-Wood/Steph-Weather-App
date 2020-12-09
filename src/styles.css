@@ -1,0 +1,95 @@
+div {
+  display: block;
+}
+
+form-control {
+  display: block;
+  width: 100%;
+}
+
+.container {
+  max-width: 800px;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.weather-app {
+  margin: 0 auto;
+  padding: 30px 60px 40px 60px;
+  border: none;
+  border-radius: 25px;
+}
+
+.fa-map-marker-alt {
+  position: relative;
+  font-size: 25px;
+  left: 0;
+  color: #f0f0f0;
+  padding: 8px;
+}
+
+.city-input {
+  filter: drop-shadow(5px 5px 5px #837a8b);
+}
+
+.btn-primary {
+  display: inline-block;
+  background-color: #f0f0f0;
+  border: solid 1px #f0f0f0;
+  color: #495464;
+}
+
+.weather-forecast {
+  text-align: center;
+  margin-top: 30px;
+  background-color: rgba(255, 255, 255, 0.452);
+  border-radius: 15px;
+  padding: 5px;
+  padding-top: 15px;
+  filter: drop-shadow(5px 5px 5px #837a8b);
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+.result {
+  line-height: 5px;
+  padding-bottom: 10px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  color: #f0f0f0;
+}
+
+.col-2 {
+  flex: 0 0 16.666667%;
+  max-width: 16.666667%;
+  position: relative;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.col-9 {
+  flex: 0 0 75%;
+  max-width: 65%;
+}
+.col-3 {
+  flex: 0 0 75%;
+  max-width: 75%;
+}
+
+.weather-app-wrapper {
+  background-image: url("../images/clouds.jpg");
+  background-size: cover;
+  max-width: 800px;
+  margin: 30px auto;
+  border: 0.5px #f0f0f0 solid;
+  border-radius: 30px;
+}
