@@ -93,3 +93,8 @@ form-control {
   border: 0.5px #f0f0f0 solid;
   border-radius: 30px;
 }
+
+.link-repository {
+  color: black;
+  text-align: center;
+}
