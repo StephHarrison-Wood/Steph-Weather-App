@@ -1,7 +1,7 @@
 // Current Date
 let now = new Date();
 
-let current = document.querySelector("p .current");
+let current = document.querySelector("#current");
 
 let date = now.getDate();
 let hours = now.getHours();
@@ -52,6 +52,12 @@ function displayWeatherConditon(response) {
   document.querySelector("#current-temperature").innerHTML = Math.round(
     response.data.main.temp
   );
+  document.querySelector("#humidity").innerHTML = response.data.main.humidity;
+  document.querySelector("#wind").innerHTML = Math.round(
+    response.data.wind.speed
+  );
+  document.querySelector("#description").innerHTML =
+    response.data.weather[0].main;
 }
 
 function searchCity(city) {
@@ -85,18 +91,19 @@ let currentLocationButton = document.querySelector("#current-location-button");
 currentLocationButton.addEventListener("click", getCurrentLocation);
 
 searchCity("London");
-// Celsius to Fahrenheit
 
-//function convertToFahrenheit(event) {
-//event.preventDefault();
-// let temperatureElement = document.querySelector("#temperature");
-//temperatureElement.innerHTML = 54;
-//}
+//Celsius to Fahrenheit
 
-//function convertToCelsius(event) {
-//event.preventDefault();
-//let temperatureElement = document.querySelector("#temperature");
-//  temperatureElement.innerHTML = 12;
-//}
+function convertToFahrenheit(event) {
+  event.preventDefault();
+  let temperatureElement = document.querySelector("#temperature");
+  temperatureElement.innerHTML = 54;
+}
+
+function convertToCelsius(event) {
+  event.preventDefault();
+  let temperatureElement = document.querySelector("#temperature");
+  temperatureElement.innerHTML = 12;
+}
 
 // to add back into HTML <p><a href="" id="celsius"> °C</a><a href="" id="fahrenheit"> °F</a></p>

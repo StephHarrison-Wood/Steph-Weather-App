@@ -37,8 +37,24 @@
         </form>
         <div class="result">
           <h1 id="city"></h1>
-          <p id="current">Saturday 14th Nov 22:05</p>
-          <p id="current-temperature">°C</p>
+          <ul>
+          <li id="current"></li>
+          <li id="description"></li>
+          </ul>
+        </div>
+        <div class="row">
+          <div class="col-6">
+              
+                <span class="current-temperature" id="current-temperature"></span><span class="units">°C</span>
+                 
+          </div>
+          <div class="col-6">
+            <ul>
+              <li>Humidity: <span id="humidity"></span>%</li>
+              <li>Wind: <span id="wind"></span> km/h</li>
+            </ul>
+          </div>
+        </div>
         </div>
         <div class="row weather-forecast" id="forecast">
           <div class="col-2">
@@ -82,7 +98,7 @@
     </div> 
   </div>
 <div class="link-repository">
-  <p>This project was coded by Stephanie Harrison-Wood and is open sourced on <a class="github-link" href="https://github.com/StephHarrison-Wood/Steph-Weather-App" " target="_blank">Github</a> </p>
+  <p><a class="github-link" href="https://github.com/StephHarrison-Wood/Steph-Weather-App" " target="_blank">Open-source code</a> by Stephanie Harrison-Wood</p> 
 </div>
   <script src="src/script.js"></script>
 </body>
